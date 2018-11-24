@@ -1,0 +1,53 @@
+<head>
+
+    <!------------------------ META DATA ------------------------>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,requiresActiveX=true">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Facebook -->
+    <meta property="og:title" content="site_title">
+    <meta property="og:description" content="site_description">
+    <meta property="og:image" content="http://www.example.com/path/to/image.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@site_account">
+    <meta name="twitter:creator" content="@individual_account">
+    <meta name="twitter:url" content="http://www.example.com/path/to/page.html">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="http://www.example.com/path/to/image.jpg">
+
+    <!-- Give the spiders the key to the map -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+
+    <!------------------------ DNS PREFETCH ------------------------>
+
+    <link rel="dns-prefetch" href="//s3.amazonaws.com">
+
+
+    <!------------------------ ICONS ------------------------>
+
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+
+    <!------------------------ STYLES ------------------------>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+
+    <!------------------------ SCRIPTS ------------------------>
+
+    {%- feed_meta -%}
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+    {%- endif -%}
+
+</head>
