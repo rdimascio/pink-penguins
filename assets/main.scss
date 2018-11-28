@@ -108,7 +108,6 @@ img {
 .smooth {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased; }
-
 @media (min-width: 879px) {
 	.p-r-1-lg {
 	padding-right: 1rem; }
@@ -177,17 +176,29 @@ img {
   		.sign-up button {
 	  	    margin-left: .3rem; } }
 .logos {
-	padding-left: 2rem;
-	padding-right: 2rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
 	height: 100px;
 	background-color: #e6c9ff; }
+	@media (max-width: 719px){
+		.logos {
+			padding-left: 2rem;
+			padding-right: 2rem; } }
 	@media (max-width: 497px){
 		.logos {
-			height: 80px; } }
+			height: 80px;
+			padding-left: 0;
+			padding-right: 0; } }
 .logos .logo-row .logo img {
 	height: 60px; }
+@media (max-width: 340px) {
+		.column.logo {
+			padding: .5rem; } }
 .container.info {
 	padding: 4rem; }
+	@media (max-width: 719px) {
+		.container.info {
+			padding: 2rem; } }
 .info-row {
 	padding: 6rem 0; }
 	@media (max-width: 719px) {
@@ -199,6 +210,9 @@ img {
 			text-align: center; }
 		.text-left-sm {
 			text-align: left; } }
+	@media (max-width: 420px) {
+		.info-row {
+			padding: 4rem 0; } }
 .info-row h2 {
 	font-size: 30px;
 	opacity: 0.8; }
